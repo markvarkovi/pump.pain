@@ -1,11 +1,11 @@
-import Header from '../src/Components/Header.jsx'
+import Main from '../src/Components/Main.jsx'
 
 function App() {
 
   return (
-<>
-  <Header/>
-</>
+    <>
+  <Main/>
+    </>
   )
 }
 
