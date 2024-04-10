@@ -4,21 +4,21 @@ export default {
     "./index.html",
     "./src/App.jsx",
     "./src/Components/Header.jsx",
-    "./src/Components/Main.jsx"
+    "./src/Components/Main.jsx",
+    "./src/Components/Intro.jsx",
   ],
   theme: {
     extend: {
       keyframes: {
         wiggle: {
           "0%, 100%": { transform: "rotate(-3deg)" },
-          "50%": { transform: "rotate(3deg)" }
-        }
+          "50%": { transform: "rotate(3deg)" },
+        },
       },
       animation: {
-        wiggle: "wiggle 200ms ease-in-out"
-      }
+        wiggle: "wiggle 200ms ease-in-out",
+      },
     },
   },
   plugins: [],
-}
-
+};

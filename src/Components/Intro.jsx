@@ -3,8 +3,8 @@ import { useState } from "react";
 export default function Intro() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  function handleRedirect() {
-    window.location.href = "https://t.me/+QiRqhErmM0A2MjM0";
+  function telegramRedirect() {
+    window.location.href = "https://t.me/+jWZrw_eUN29hN2Vk";
   }
 
   const images = [
@@ -24,8 +24,6 @@ export default function Intro() {
   const getHimChill = () => {
     setCurrentImageIndex((prevIndex) => prevIndex - 1);
   };
-
-  console.log("Current image index is" + currentImageIndex);
   return (
     <>
       <div className="flex justify-end items-center">
@@ -42,15 +40,15 @@ export default function Intro() {
           <br></br>
           <p className="mb-4">But here, you are NOT ALONE.</p>
           <button
-            className="mt-8 bg-gradient-to-t from-red-400 to-gray border border-solid border-black hover:from-red-500 hover:to-red 
-      text-white font-bold p-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out"
-            onClick={handleRedirect}
+            className="mt-8 bg-gradient-to-t from-red-400 to-gray border border-solid border-yellow-800 border-2 hover:from-red-500 hover:to-red 
+      text-white font-bold p-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out text-4xl"
+            onClick={telegramRedirect}
           >
             Join the community!
           </button>
         </div>
         <div
-          className="flex flex-col bg-gray-900 mr-40 rounded-lg bg-opacity-40 border-8 border-black border-double"
+          className="flex flex-col bg-gray-900 mr-40 rounded-lg bg-opacity-40 border-8 border-yellow-800 border-double"
           style={{ height: "30rem", width: "150rem" }}
         >
           <img
@@ -66,7 +64,7 @@ export default function Intro() {
           />
           <div className="flex justify-between">
             <button
-              className="text-2xl mt-8 bg-gradient-to-t from-red-400 to-gray border border-solid border-black hover:from-red-500 hover:to-red
+              className="text-2xl mt-8 bg-gradient-to-t from-red-700 to-gray border border-solid border-yellow-800 border-2 hover:from-red-500 hover:to-red
        text-white font-bold p-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out"
               onClick={getHimMad}
             >
@@ -74,7 +72,7 @@ export default function Intro() {
             </button>
             <button
               onClick={getHimChill}
-              className="text-2xl mt-8 bg-gradient-to-t from-red-400 to-gray border border-solid border-black hover:from-red-500 hover:to-red
+              className="text-2xl mt-8 bg-gradient-to-t from-red-200 to-gray border border-solid border-yellow-800 border-2 hover:from-red-100 hover:to-red
        text-white font-bold p-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out"
             >
               Make him chill

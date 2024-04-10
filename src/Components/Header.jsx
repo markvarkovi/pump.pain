@@ -5,10 +5,10 @@ export default function Header() {
         <div id="pictures" className="flex">
           <img
             src="https://i.ibb.co/cXM63M5/N-vtelen-terv-20.png"
-            className="w-40 h-40 rounded-full"
+            className="w-40 h-40 rounded-full border border-4 border-yellow-800"
+            onClick={() => window.location.reload()}
           />
         </div>
-
         <div>ABOUT</div>
         <div>LIST OF RUG RATS</div>
         <div>SOCIALS</div>
