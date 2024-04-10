@@ -30,6 +30,22 @@ export default function Rugrats() {
               <td className="py-4 px-6">SUSY</td>
               <td className="py-4 px-6">$10,000</td>
             </tr>
+            <tr className="bg-gray-800">
+              <td className="py-4 px-6">3</td>
+              <td className="py-4 px-6">6z3yKowgUDDZBsdUQxdQPsUyvidYb7K96EadJCUuFwKZ</td>
+              <td className="py-4 px-6">@MedusaSwap</td>
+              <td className="py-4 px-6">MedusaSwap</td>
+              <td className="py-4 px-6">tMIDS</td>
+              <td className="py-4 px-6">$12,000</td>
+            </tr>
+            <tr className="bg-gray-800">
+              <td className="py-4 px-6">4</td>
+              <td className="py-4 px-6">HgcjfUCTjpnPQarXDmhM3UKTWsWH873MASYvNeSQj5Wh</td>
+              <td className="py-4 px-6">DEPEPTIVE</td>
+              <td className="py-4 px-6">DEPEPTIVE</td>
+              <td className="py-4 px-6">$CLUES</td>
+              <td className="py-4 px-6">$40,000</td>
+            </tr>
           </tbody>
         </table>
       </div>
