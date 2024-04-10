@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Intro() {
+export default function Home() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   function telegramRedirect() {
@@ -18,15 +18,28 @@ export default function Intro() {
   ];
 
   const getHimMad = () => {
-    setCurrentImageIndex((prevIndex) => prevIndex + 1);
+    setCurrentImageIndex((prevIndex) => {
+      if (prevIndex < 6) {
+        return prevIndex + 1;
+      } else {
+        return prevIndex;
+      }
+    });
   };
 
   const getHimChill = () => {
-    setCurrentImageIndex((prevIndex) => prevIndex - 1);
+    setCurrentImageIndex((prevIndex) => {
+      if (prevIndex > 0) {
+        return prevIndex - 1;
+      } else {
+        return prevIndex;
+      }
+    });
   };
+
   return (
     <>
-      <div className="flex justify-end items-center">
+      <div className="flex items-start my-28">
         <div className="mx-64 text-gray-50 tracking-widest text-lg ">
           <h1 className="my-16 font-bold text-2xl">
             Welcome to the pump.pain community!
@@ -37,7 +50,7 @@ export default function Intro() {
             The sinking feeling in your stomach, the disbelief as your investment
             evaporates into thin air.
           </p>
-          <br></br>
+          <br />
           <p className="mb-4">But here, you are NOT ALONE.</p>
           <button
             className="mt-8 bg-gradient-to-t from-red-400 to-gray border border-solid border-yellow-800 border-2 hover:from-red-500 hover:to-red 
@@ -52,13 +65,7 @@ export default function Intro() {
           style={{ height: "30rem", width: "150rem" }}
         >
           <img
-            src={
-              currentImageIndex > 6
-                ? images[6]
-                : currentImageIndex < 1
-                ? images[0]
-                : images[currentImageIndex]
-            }
+            src={images[currentImageIndex]}
             alt={`Image ${currentImageIndex + 1}`}
             className="p-4 object-contain w-full h-full cursor-pointer transition-transform duration-200 ease-in-out transform hover:scale-110"
           />
@@ -68,7 +75,7 @@ export default function Intro() {
        text-white font-bold p-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out"
               onClick={getHimMad}
             >
-              Get him mad
+              Make him mad
             </button>
             <button
               onClick={getHimChill}
@@ -80,7 +87,6 @@ export default function Intro() {
           </div>
         </div>
       </div>
-      <div></div>
     </>
   );
 }

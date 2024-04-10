@@ -3,9 +3,11 @@ export default {
   content: [
     "./index.html",
     "./src/App.jsx",
-    "./src/Components/Header.jsx",
-    "./src/Components/Main.jsx",
-    "./src/Components/Intro.jsx",
+    "./src/Components/Navbar.jsx",
+    "./src/Components/Home.jsx",
+    "./src/Components/About.jsx",
+    "./src/Components/Rugrats.jsx",
+    "./src/Components/Socials.jsx",
   ],
   theme: {
     extend: {
