@@ -1,13 +1,18 @@
 export default function Header() {
-    return (
-<header className="text-gray-50 pt-16 mb-0 px-4 lg:px-8 w-full flex items-center justify-center">
-  <div className="flex items-center space-x-80 tracking-widest text-2xl">
-    <div>ABOUT</div>
-    <div>WHITEPAPER</div>
-    <div>SOCIALS</div>
-  </div>
-  {/* You can add any additional elements on the right side of the header here */}
-</header>
+  return (
+    <header className="text-gray-50 pt-16 mb-0 px-4 lg:px-8 w-full flex items-center justify-center">
+      <div className="flex items-center space-x-60 tracking-widest text-2xl cursor-pointer">
+        <div id="pictures" className="flex">
+          <img
+            src="https://i.ibb.co/cXM63M5/N-vtelen-terv-20.png"
+            className="w-40 h-40 rounded-full"
+          />
+        </div>
 
-    )
+        <div>ABOUT</div>
+        <div>LIST OF RUG RATS</div>
+        <div>SOCIALS</div>
+      </div>
+    </header>
+  );
 }
