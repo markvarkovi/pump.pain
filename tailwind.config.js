@@ -8,6 +8,7 @@ export default {
     "./src/Components/About.jsx",
     "./src/Components/Rugrats.jsx",
     "./src/Components/Socials.jsx",
+    "./src/Components/Report.jsx",
   ],
   theme: {
     extend: {
