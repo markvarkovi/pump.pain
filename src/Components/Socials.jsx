@@ -2,6 +2,7 @@ export default function Socials() {
   const tg = "https://t.me/+jWZrw_eUN29hN2Vk";
   const x = "https://twitter.com/PumpPain53294";
   const pump = "https://pump.fun";
+  const tiktok = "https://www.tiktok.com/@pump.pain";
 
   function redirectTo(link) {
     window.location.href = link;
@@ -18,12 +19,32 @@ export default function Socials() {
               className="w-40 h-40 mb-8"
             />
             <p className="text-gray-800 text-center mb-8 text-xl">
-              Follow us on Twitter for daily updates
+              Follow us on X for daily updates and giveaways
             </p>
             <button
               className="bg-gradient-to-t from-red-400 to-gray border border-solid border-yellow-800 border-2 hover:from-red-500 hover:to-red 
                 text-white font-bold p-4 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out text-3xl"
               onClick={() => redirectTo(x)}
+            >
+              Follow
+            </button>
+          </div>
+        </div>
+
+        <div className="text-gray-50 bg-red-400 bg-opacity-20 rounded-lg p-12 shadow-md mx-4">
+          <div className="flex flex-col items-center">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/023/986/921/original/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.png"
+              alt="Tiktok Logo"
+              className="w-40 h-40 mb-8"
+            />
+            <p className="text-gray-800 text-center mb-8 text-xl">
+              Follow us on TikTok for latest community memes
+            </p>
+            <button
+              className="bg-gradient-to-t from-red-400 to-gray border border-solid border-yellow-800 border-2 hover:from-red-500 hover:to-red 
+                text-white font-bold p-4 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out text-3xl"
+              onClick={() => redirectTo(tiktok)}
             >
               Follow
             </button>
@@ -64,9 +85,9 @@ export default function Socials() {
             <button
               className="bg-gradient-to-t from-red-400 to-gray border border-solid border-yellow-800 border-2 hover:from-red-500 hover:to-red 
                 text-white font-bold p-4 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out text-3xl"
-              onClick={() => redirectTo(pump)}
+              onClick={() => alert("STAY TUNED")}
             >
-              Buy
+              SOON
             </button>
           </div>
         </div>
