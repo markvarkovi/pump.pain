@@ -71,7 +71,7 @@ export default function ReportPage() {
         <input
           type="text"
           id="walletAddress"
-          className="bg-yellow-700 bg-opacity-40 rounded-lg text-black"
+          className="bg-red-100 bg-opacity-40 rounded-lg text-black"
           name="walletAddress"
           value={formData.walletAddress}
           onChange={handleChange}
@@ -81,7 +81,7 @@ export default function ReportPage() {
         <input
           type="text"
           id="username"
-          className="bg-yellow-700 bg-opacity-40 rounded-lg text-black"
+          className="bg-red-100 bg-opacity-40 rounded-lg text-black"
           name="username"
           value={formData.username}
           onChange={handleChange}
@@ -91,7 +91,7 @@ export default function ReportPage() {
         <input
           type="text"
           id="projectName"
-          className="bg-yellow-700 bg-opacity-40 rounded-lg text-black"
+          className="bg-red-100 bg-opacity-40 rounded-lg text-black"
           name="projectName"
           value={formData.projectName}
           onChange={handleChange}
@@ -101,7 +101,7 @@ export default function ReportPage() {
         <input
           type="text"
           id="ticker"
-          className="bg-yellow-700 bg-opacity-40 rounded-lg text-black"
+          className="bg-red-100 bg-opacity-40 rounded-lg text-black"
           name="ticker"
           value={formData.ticker}
           onChange={handleChange}
@@ -111,7 +111,7 @@ export default function ReportPage() {
         <input
           type="number"
           id="marketCap"
-          className="bg-yellow-700 bg-opacity-40 rounded-lg text-black"
+          className="bg-red-100 bg-opacity-40 rounded-lg text-black"
           name="marketCap"
           value={formData.marketCap}
           onChange={handleChange}
@@ -121,7 +121,7 @@ export default function ReportPage() {
         <textarea
           id="evidence"
           name="evidence"
-          className="bg-yellow-700 bg-opacity-40 rounded-lg text-black"
+          className="bg-red-100 bg-opacity-40 rounded-lg text-black"
           rows="4"
           value={formData.evidence}
           onChange={handleChange}
@@ -129,7 +129,7 @@ export default function ReportPage() {
 
         <button
           type="submit"
-          className="mt-8 bg-gradient-to-t from-red-400 to-gray border border-solid border-yellow-800 border-2 hover:from-red-500 hover:to-red 
+          className="mt-8 bg-gradient-to-t from-red-400 to-gray border border-solid border-red-100 border-2 hover:from-red-500 hover:to-red 
           text-white font-bold p-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out text-4xl"
         >
           SEND REPORT

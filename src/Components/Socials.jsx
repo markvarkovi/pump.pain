@@ -1,7 +1,7 @@
 export default function Socials() {
   const tg = "https://t.me/+jWZrw_eUN29hN2Vk";
   const x = "https://twitter.com/PumpPain53294";
-  const pump = "https://pump.fun";
+  const pump = "https://pump.fun"; //need to be added when listing is done
   const tiktok = "https://www.tiktok.com/@pump.pain";
 
   function redirectTo(link) {
@@ -10,7 +10,7 @@ export default function Socials() {
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="max-w-6xl flex justify-evenly items-center mb-48">
+      <div className="2xl:(max-w-6xl flex justify-evenly items-center)">
         <div className="text-gray-50 bg-red-400 bg-opacity-20 rounded-lg p-12 shadow-md mx-4">
           <div className="flex flex-col items-center">
             <img
@@ -71,7 +71,6 @@ export default function Socials() {
           </div>
         </div>
 
-        {/* Card 3: Buy Button */}
         <div className="text-gray-50 bg-red-400 bg-opacity-20 rounded-lg p-12 shadow-md mx-4">
           <div className="flex flex-col items-center">
             <img
@@ -87,7 +86,7 @@ export default function Socials() {
                 text-white font-bold p-4 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out text-3xl"
               onClick={() => alert("STAY TUNED")}
             >
-              SOON
+              Soon
             </button>
           </div>
         </div>

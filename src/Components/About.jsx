@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <>
-      <div className="mx-64 mt-12 text-gray-50 tracking-wider text-lg flex flex-col items-center bg-red-400 rounded-xl border border-yellow-800 border-double p-12 bg-opacity-10">
+      <div className="mx-24 mt-12 2xl:mx-64 mt-12 text-gray-50 tracking-wider text-lg flex flex-col items-center bg-red-400 rounded-xl border border-yellow-800 border-double p-12 bg-opacity-10">
         <h1 className="font-bold text-4xl mb-8">OUR MISSION</h1>
         <br />
         <br />
