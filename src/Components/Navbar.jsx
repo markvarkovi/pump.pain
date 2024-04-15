@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <header className="text-gray-50 mb-0 px-4 w-full flex items-center justify-center">
-      <div className="flex items-center space-x-40 tracking-widest text-2xl cursor-pointer">
+      <div className="flex items-center space-x-10 2xl:space-x-40 tracking-widest text-sm 2xl:text-2xl cursor-pointer">
         <div id="pictures" className="flex mt-8">
           <img
             src="https://i.ibb.co/cXM63M5/N-vtelen-terv-20.png"
