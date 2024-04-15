@@ -9,7 +9,7 @@ export default function Socials() {
   }
 
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex flex-column items-center h-screen 2xl:(flex items-center h-screen)">
       <div className="2xl:(max-w-6xl flex justify-evenly items-center)">
         <div className="text-gray-50 bg-red-400 bg-opacity-20 rounded-lg p-12 shadow-md mx-4">
           <div className="flex flex-col items-center">

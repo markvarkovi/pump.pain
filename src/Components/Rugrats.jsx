@@ -2,7 +2,7 @@ export default function Rugrats() {
   return (
     <>
       <div className="2xl:ml-80 max-w-4xl mt-24">
-        <table className="2xl:w-full bg-red-300 text-gray-50 shadow-lg rounded-lg overflow-hidden text-gray-50 text-xl">
+        <table className="w-full bg-red-300 text-gray-50 shadow-lg rounded-lg overflow-hidden text-gray-50 text-xl">
           <thead className="text-left">
             <tr>
               <th className="py-4 px-6 bg-gray-900">Number</th>
