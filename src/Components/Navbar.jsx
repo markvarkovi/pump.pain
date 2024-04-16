@@ -6,7 +6,7 @@ export default function Navbar() {
       <div className="bg-yellow-300 bg-opacity-90 text-black text-3xl bold flex justify-center font-bold tracking-widest overflow-hidden py-4">
         <p>
           🚀 LISTING $PUPA ON PUMP.FUN AT&nbsp;
-          <em>⭐4/17 22:00 GMT+0⭐</em>
+          <em>⭐4/17 20:00 GMT+0⭐</em>
         </p>
       </div>
       <header className="text-gray-50 mb-0 px-4 w-full flex items-center justify-center">
