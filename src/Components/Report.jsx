@@ -17,17 +17,9 @@ export default function ReportPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { walletAddress, username, projectName, ticker, marketCap, evidence } =
-      formData;
+    const { walletAddress, username, projectName, ticker } = formData;
 
-    if (
-      !walletAddress ||
-      !username ||
-      !projectName ||
-      !ticker ||
-      !marketCap ||
-      !evidence
-    ) {
+    if (!walletAddress || !username || !projectName || !ticker) {
       alert("Please fill all the fields to send the report");
       return;
     }
@@ -37,8 +29,6 @@ export default function ReportPage() {
       Username: ${username}
       Name of the project: ${projectName}
       Ticker: ${ticker}
-      Top estimated market cap: ${marketCap}
-      Evidence: ${evidence}
     `;
 
     window.location.href = `mailto:painpump4@gmail.com?subject=Rugrat Report&body=${encodeURIComponent(
@@ -50,8 +40,6 @@ export default function ReportPage() {
       username: "",
       projectName: "",
       ticker: "",
-      marketCap: "",
-      evidence: "",
     });
   };
 
@@ -106,27 +94,6 @@ export default function ReportPage() {
           value={formData.ticker}
           onChange={handleChange}
         />
-
-        <label htmlFor="marketCap">Top Estimated Market Cap in USD</label>
-        <input
-          type="number"
-          id="marketCap"
-          className="bg-red-100 bg-opacity-40 rounded-lg text-black"
-          name="marketCap"
-          value={formData.marketCap}
-          onChange={handleChange}
-        />
-
-        <label htmlFor="evidence">Evidence</label>
-        <textarea
-          id="evidence"
-          name="evidence"
-          className="bg-red-100 bg-opacity-40 rounded-lg text-black"
-          rows="4"
-          value={formData.evidence}
-          onChange={handleChange}
-        ></textarea>
-
         <button
           type="submit"
           className="mt-8 bg-gradient-to-t from-red-400 to-gray border border-solid border-red-100 border-2 hover:from-red-500 hover:to-red 

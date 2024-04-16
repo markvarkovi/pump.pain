@@ -2,24 +2,40 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
-  const [stopAnimation, setStopAnimation] = useState(false);
+  const countdownDuration = 24 * 60 * 60; // 24 hours in seconds
+  const [countdown, setCountdown] = useState(() => {
+    const storedCountdown = localStorage.getItem("countdown");
+    return storedCountdown ? parseInt(storedCountdown, 10) : countdownDuration;
+  });
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      setStopAnimation(true);
-    }, 12000);
+    const interval = setInterval(() => {
+      setCountdown((prevCountdown) => {
+        const newCountdown = prevCountdown - 1;
+        localStorage.setItem("countdown", newCountdown.toString());
+        return newCountdown;
+      });
+    }, 1000);
 
-    return () => clearTimeout(timeout);
+    return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    // Reset countdown when the component first mounts
+    localStorage.setItem("countdown", countdownDuration.toString());
+  }, []);
+
+  // Format the remaining time into hours, minutes, and seconds
+  const hours = Math.floor(countdown / 3600);
+  const minutes = Math.floor((countdown % 3600) / 60);
+  const seconds = countdown % 60;
 
   return (
     <>
-      <div
-        id="news"
-        className="bg-yellow-500 bg-opacity-90 text-black text-3xl bold flex justify-center font-bold tracking-widest overflow-hidden"
-      >
-        <p className={`p-4 ${stopAnimation ? "animate-stop" : "animate-marquee"}`}>
-          LISTING COMING SOON ON PUMP.FUN! STAY TUNED AND LOOK FOR $PUPA TOKEN!
+      <div className="bg-yellow-300 bg-opacity-90 text-black text-3xl bold flex justify-center font-bold tracking-widest overflow-hidden py-4">
+        <p className="font-sans text-gray-900">
+          LISTING $PUPA ON PUMP.FUN IN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          {hours}H : {minutes}M : {seconds}S
         </p>
       </div>
       <header className="text-gray-50 mb-0 px-4 w-full flex items-center justify-center">

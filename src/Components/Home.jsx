@@ -51,8 +51,7 @@ export default function Home() {
             evaporates into thin air.
           </p>
           <br />
-          <p className="mb-4">But here, you are NOT ALONE.</p>
-          <p className="mb-4">Listing on pump.fun SOON...</p>
+          <p className="mb-4 text-3xl">But here, you are NOT ALONE.</p>
           <button
             className="mt-8 bg-gradient-to-t from-red-400 to-gray border border-solid border-yellow-800 border-2 hover:from-red-500 hover:to-red 
       text-white font-bold p-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out text-4xl"
