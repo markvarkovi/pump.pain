@@ -3,10 +3,26 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const countdownDuration = 24 * 60 * 60; // 24 hours in seconds
-  const [countdown, setCountdown] = useState(() => {
+  const [countdown, setCountdown] = useState(countdownDuration);
+
+  useEffect(() => {
+    const storedTimestamp = localStorage.getItem("countdownTimestamp");
     const storedCountdown = localStorage.getItem("countdown");
-    return storedCountdown ? parseInt(storedCountdown, 10) : countdownDuration;
-  });
+    if (storedTimestamp && storedCountdown) {
+      const elapsedTime = Math.floor((Date.now() - parseInt(storedTimestamp)) / 1000);
+      const remainingTime = countdownDuration - elapsedTime;
+      if (remainingTime > 0) {
+        setCountdown(remainingTime);
+      } else {
+        setCountdown(countdownDuration);
+        localStorage.setItem("countdownTimestamp", Date.now().toString());
+        localStorage.setItem("countdown", countdownDuration.toString());
+      }
+    } else {
+      localStorage.setItem("countdownTimestamp", Date.now().toString());
+      localStorage.setItem("countdown", countdownDuration.toString());
+    }
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -20,11 +36,6 @@ export default function Navbar() {
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
-    // Reset countdown when the component first mounts
-    localStorage.setItem("countdown", countdownDuration.toString());
-  }, []);
-
   // Format the remaining time into hours, minutes, and seconds
   const hours = Math.floor(countdown / 3600);
   const minutes = Math.floor((countdown % 3600) / 60);
@@ -33,9 +44,11 @@ export default function Navbar() {
   return (
     <>
       <div className="bg-yellow-300 bg-opacity-90 text-black text-3xl bold flex justify-center font-bold tracking-widest overflow-hidden py-4">
-        <p className="font-sans text-gray-900">
-          LISTING $PUPA ON PUMP.FUN IN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          {hours}H : {minutes}M : {seconds}S
+        <p>
+          🚀 LISTING $PUPA ON PUMP.FUN IN&nbsp;
+          <em>
+            ⭐{hours}h {minutes}m {seconds}s⭐
+          </em>
         </p>
       </div>
       <header className="text-gray-50 mb-0 px-4 w-full flex items-center justify-center">
