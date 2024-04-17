@@ -1,5 +1,5 @@
 export default function Socials() {
-  const tg = "https://t.me/+jWZrw_eUN29hN2Vk";
+  const tg = "https://t.me/+QiRqhErmM0A2MjM0";
   const x = "https://twitter.com/PumpPain53294";
   const pump = "https://pump.fun"; //need to be added when listing is done
   const tiktok = "https://www.tiktok.com/@pump.pain";
