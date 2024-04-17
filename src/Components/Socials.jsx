@@ -1,7 +1,7 @@
 export default function Socials() {
   const tg = "https://t.me/+QiRqhErmM0A2MjM0";
   const x = "https://twitter.com/PumpPain53294";
-  const pump = "https://pump.fun"; //need to be added when listing is done
+  const pump = "https://pump.fun/2vBUCyQbK145DEhFuzLWwzdhboq65aiE69gbB881rpsC"; //need to be added when listing is done
   const tiktok = "https://www.tiktok.com/@pump.pain";
 
   function redirectTo(link) {
@@ -84,7 +84,7 @@ export default function Socials() {
             <button
               className="bg-gradient-to-t from-red-400 to-gray border border-solid border-yellow-800 border-2 hover:from-red-500 hover:to-red 
                 text-white font-bold p-4 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out text-3xl"
-              onClick={() => alert("STAY TUNED")}
+              onClick={() => redirectTo(pump)}
             >
               Soon
             </button>
