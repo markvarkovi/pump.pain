@@ -6,9 +6,7 @@ export default function Navbar() {
       <div className="bg-yellow-300 bg-opacity-90 text-black text-3xl bold flex justify-center font-bold tracking-widest overflow-hidden py-4">
         <p>
           🚀 LISTING $PUPA IS LIVE ON PUMP.FUN AT&nbsp;
-          <a href="https://pump.fun/2vBUCyQbK145DEhFuzLWwzdhboq65aiE69gbB881rpsC">
-            ⭐BUY HERE⭐
-          </a>
+          <a href="">⭐BUY HERE⭐</a>
         </p>
       </div>
       <header className="text-gray-50 mb-0 px-4 w-full flex items-center justify-center">
