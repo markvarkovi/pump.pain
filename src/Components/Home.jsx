@@ -50,8 +50,9 @@ export default function Home() {
             The sinking feeling in your stomach, the disbelief as your investment
             evaporates into thin air.
           </p>
+          <p>But here, you are NOT ALONE.</p>
           <br />
-          <p className="mb-4 text-3xl">But here, you are NOT ALONE.</p>
+          <p className="mb-4 text-2xl">The solution is us. The solution is $PUPA.</p>
           <button
             className="mt-8 bg-gradient-to-t from-red-400 to-gray border border-solid border-yellow-800 border-2 hover:from-red-500 hover:to-red 
       text-white font-bold p-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out text-4xl"
