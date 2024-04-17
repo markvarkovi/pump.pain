@@ -41,33 +41,40 @@ export default function Rugrats() {
           value={searchTerm}
           onChange={handleSearchChange}
         />
+        {filteredRows.length === 0 && (
+          <div className="bg-gray-800 text-gray-200 rounded-lg p-4 mt-4">
+            This wallet address is not blacklisted by our database.
+          </div>
+        )}
       </div>
-      <div className="flex justify-center mt-6">
-        <div className="max-w-6xl">
-          <table className="w-full bg-red-300 text-gray-50 shadow-lg rounded-lg overflow-hidden text-gray-50 text-xl mb-12">
-            <thead className="text-left">
-              <tr>
-                <th className="py-4 px-6 bg-gray-900">Number</th>
-                <th className="py-4 px-6">Wallet Address</th>
-                <th className="py-4 px-6 bg-gray-900">Username</th>
-                <th className="py-4 px-6">Name of the Project</th>
-                <th className="py-4 px-6">Ticker</th>
-              </tr>
-            </thead>
-            <tbody>
-              {filteredRows.map((row, index) => (
-                <tr className="bg-gray-800" key={index}>
-                  <td className="py-4 px-6">{index + 1}</td>
-                  <td className="py-4 px-6">{row.walletAddress}</td>
-                  <td className="py-4 px-6">{row.username}</td>
-                  <td className="py-4 px-6">{row.projectName}</td>
-                  <td className="py-4 px-6">{row.ticker}</td>
+      {filteredRows.length > 0 && (
+        <div className="flex justify-center mt-6">
+          <div className="max-w-6xl">
+            <table className="w-full bg-red-300 text-gray-50 shadow-lg rounded-lg overflow-hidden text-gray-50 text-xl mb-12">
+              <thead className="text-left">
+                <tr>
+                  <th className="py-4 px-6 bg-gray-900">Number</th>
+                  <th className="py-4 px-6">Wallet Address</th>
+                  <th className="py-4 px-6 bg-gray-900">Username</th>
+                  <th className="py-4 px-6">Name of the Project</th>
+                  <th className="py-4 px-6">Ticker</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {filteredRows.map((row, index) => (
+                  <tr className="bg-gray-800" key={index}>
+                    <td className="py-4 px-6">{index + 1}</td>
+                    <td className="py-4 px-6">{row.walletAddress}</td>
+                    <td className="py-4 px-6">{row.username}</td>
+                    <td className="py-4 px-6">{row.projectName}</td>
+                    <td className="py-4 px-6">{row.ticker}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
+      )}
     </>
   );
 }
@@ -119,6 +126,132 @@ const data = [
     walletAddress: "6DdKqwXD939bAtu4XUxXdiRfhUmzLh6nwYE71944RUq3",
     username: "6DdKqw",
     projectName: "Tender",
-    ticker: "Tender",
+    ticker: "TENDER",
+  },
+  {
+    walletAddress: "3TymUEGowL5PTrLdwKCH2KMws2JkyHCRjSe2N791ibHh",
+    username: "3TymUE",
+    projectName: "BirdDog",
+    ticker: "BDOG",
+  },
+  {
+    walletAddress: "3TymUEGowL5PTrLdwKCH2KMws2JkyHCRjSe2N791ibHh",
+    username: "3TymUE",
+    projectName: "BirdDog",
+    ticker: "BDOG",
+  },
+  {
+    walletAddress: "GKiYQ4hURwAtRJtA1R8gKyXpcfQQpvUQD3WgQvy98VEZ",
+    username: "Praialves",
+    projectName: "Sofibracoins",
+    ticker: "PRFV",
+  },
+  {
+    walletAddress: "GKiYQ4hURwAtRJtA1R8gKyXpcfQQpvUQD3WgQvy98VEZ",
+    username: "Praialves",
+    projectName: "Solaxative",
+    ticker: "SOLAX",
+  },
+  {
+    walletAddress: "GKiYQ4hURwAtRJtA1R8gKyXpcfQQpvUQD3WgQvy98VEZ",
+    username: "Praialves",
+    projectName: "WORLD PEACE",
+    ticker: "W☮",
+  },
+  {
+    walletAddress: "GKiYQ4hURwAtRJtA1R8gKyXpcfQQpvUQD3WgQvy98VEZ",
+    username: "Praialves",
+    projectName: "Lambo Space Princess",
+    ticker: "LSP",
+  },
+  {
+    walletAddress: "GKiYQ4hURwAtRJtA1R8gKyXpcfQQpvUQD3WgQvy98VEZ",
+    username: "Praialves",
+    projectName: "Solmail",
+    ticker: "Mail",
+  },
+  {
+    walletAddress: "GKiYQ4hURwAtRJtA1R8gKyXpcfQQpvUQD3WgQvy98VEZ",
+    username: "Praialves",
+    projectName: "DUCKSCOINS",
+    ticker: "DUCK",
+  },
+  {
+    walletAddress: "GKiYQ4hURwAtRJtA1R8gKyXpcfQQpvUQD3WgQvy98VEZ",
+    username: "Praialves",
+    projectName: "HIQUAFF",
+    ticker: "QUAFF",
+  },
+  {
+    walletAddress: "491RdRRAhq4Zv5SYKMnB2cgQ7avqhSDgqntHCx3hvBG4",
+    username: "491RdR",
+    projectName: "Chad pepe",
+    ticker: "CHAD",
+  },
+  {
+    walletAddress: "HEACiuvAnVtzXMMqXmr2WrFGJagU5bn5CT8LVR9VUh69",
+    username: "HEACiu",
+    projectName: "MEMEWARS",
+    ticker: "MEWA",
+  },
+  {
+    walletAddress: "HWU2NH5apfxUpw2Wy6mBoHm2uZ7HgHFAnu9MjHTovpVD",
+    username: "pump888",
+    projectName: "DUBAI / VENICE",
+    ticker: "DBVNC",
+  },
+  {
+    walletAddress: "HWU2NH5apfxUpw2Wy6mBoHm2uZ7HgHFAnu9MjHTovpVD",
+    username: "pump888",
+    projectName: "Milady Sword Cock",
+    ticker: "COCK",
+  },
+  {
+    walletAddress: "HWU2NH5apfxUpw2Wy6mBoHm2uZ7HgHFAnu9MjHTovpVD",
+    username: "pump888",
+    projectName: "American Based",
+    ticker: "BUSA",
+  },
+  {
+    walletAddress: "HWU2NH5apfxUpw2Wy6mBoHm2uZ7HgHFAnu9MjHTovpVD",
+    username: "pump888",
+    projectName: "pepe1/2",
+    ticker: "pepe1/2",
+  },
+  {
+    walletAddress: "HWU2NH5apfxUpw2Wy6mBoHm2uZ7HgHFAnu9MjHTovpVD",
+    username: "pump888",
+    projectName: "dognohat",
+    ticker: "Nhbg",
+  },
+  {
+    walletAddress: "HWU2NH5apfxUpw2Wy6mBoHm2uZ7HgHFAnu9MjHTovpVD",
+    username: "pump888",
+    projectName: "JOPANMIKADO",
+    ticker: "MIKADO",
+  },
+  {
+    walletAddress: "HWU2NH5apfxUpw2Wy6mBoHm2uZ7HgHFAnu9MjHTovpVD",
+    username: "pump888",
+    projectName: "Turkish Milady",
+    ticker: "TURKMIL",
+  },
+  {
+    walletAddress: "HWU2NH5apfxUpw2Wy6mBoHm2uZ7HgHFAnu9MjHTovpVD",
+    username: "pump888",
+    projectName: "type shit",
+    ticker: "WOLF",
+  },
+  {
+    walletAddress: "HWU2NH5apfxUpw2Wy6mBoHm2uZ7HgHFAnu9MjHTovpVD",
+    username: "pump888",
+    projectName: "Sad Nuggle",
+    ticker: "NUG",
+  },
+  {
+    walletAddress: "HWU2NH5apfxUpw2Wy6mBoHm2uZ7HgHFAnu9MjHTovpVD",
+    username: "pump888",
+    projectName: "Islamic Republic of Irug",
+    ticker: "IRUG",
   },
 ];
