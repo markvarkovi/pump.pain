@@ -23,7 +23,7 @@ export default function About() {
           Together, we are building a community which is able to shield against rugging
           and swinging. If you have been rug-pulled and need a shoulder to lean on, or if
           you want to join the fight against rug-pullers, DAXWEEDER is here for you. Just
-          fill in a report, provide evidence and we will display the ID of the Rugrat!
+          roll a joint and join the DAXWEEDERS!
           <br />
           <br />
           <strong className="text-red-300 text-4xl tracking-widest">
