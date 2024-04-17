@@ -54,8 +54,8 @@ export default function ReportPage() {
         onSubmit={handleSubmit}
         className="flex flex-col bg-red-400 rounded-xl border border-yellow-800 border-double py-8 px-48 mx-32 bg-opacity-20 text-gray-50 uppercase font-bold tracking-widest"
       >
-        <h1 className="flex justify-center items-center mb-8 text-3xl">NEW REPORT</h1>
-        <label htmlFor="walletAddress">Rugrat's Wallet Address</label>
+        <h1 className="flex justify-center items-center mb-8 text-3xl">NEW APPLY</h1>
+        <label htmlFor="walletAddress">Your Wallet Address</label>
         <input
           type="text"
           id="walletAddress"
@@ -74,32 +74,12 @@ export default function ReportPage() {
           value={formData.username}
           onChange={handleChange}
         />
-
-        <label htmlFor="projectName">Name of the Project</label>
-        <input
-          type="text"
-          id="projectName"
-          className="bg-red-100 bg-opacity-40 rounded-lg text-black"
-          name="projectName"
-          value={formData.projectName}
-          onChange={handleChange}
-        />
-
-        <label htmlFor="ticker">Ticker</label>
-        <input
-          type="text"
-          id="ticker"
-          className="bg-red-100 bg-opacity-40 rounded-lg text-black"
-          name="ticker"
-          value={formData.ticker}
-          onChange={handleChange}
-        />
         <button
           type="submit"
           className="mt-8 bg-gradient-to-t from-red-400 to-gray border border-solid border-red-100 border-2 hover:from-red-500 hover:to-red 
           text-white font-bold p-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out text-4xl"
         >
-          SEND REPORT
+          SEND APPLICATION
         </button>
       </form>
       <img

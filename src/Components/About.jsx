@@ -6,7 +6,7 @@ export default function About() {
         <br />
         <br />
         <p className="text-2xl mx-26">
-          At Pump.Pain, we provide a space for investors to express their anger,
+          At DAXWEEDER, we provide a space for investors to express their anger,
           disappointment, and pain openly and without judgment. Whether you are a seasoned
           trader or a newcomer to the world of crypto, we are here to lend an ear and
           offer support during these difficult times. But we are not just a sounding board
@@ -20,16 +20,10 @@ export default function About() {
           </em>
           <br />
           <br />
-          Our community serves as a gathering place for investors to share information
-          about the mechanics of rugpulling, invent solutions, and track the wallet of
-          rugpullers.
-          <br />
-          <br />
-          Together, we are building a database to shine a light on these fraudulent
-          practices and protect others from falling victim in the future. If you have been
-          rug-pulled and need a shoulder to lean on, or if you want to join the fight
-          against rug-pullers, Pump.Pain is here for you. Just fill in a report, provide
-          evidence and we will display the ID of the Rugrat!
+          Together, we are building a community which is able to shield against rugging
+          and swinging. If you have been rug-pulled and need a shoulder to lean on, or if
+          you want to join the fight against rug-pullers, DAXWEEDER is here for you. Just
+          fill in a report, provide evidence and we will display the ID of the Rugrat!
           <br />
           <br />
           <strong className="text-red-300 text-4xl tracking-widest">

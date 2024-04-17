@@ -44,7 +44,6 @@ export default function Socials() {
             <button
               className="bg-gradient-to-t from-red-400 to-gray border border-solid border-yellow-800 border-2 hover:from-red-500 hover:to-red 
                 text-white font-bold p-4 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out text-3xl"
-              onClick={() => redirectTo(tiktok)}
             >
               Follow
             </button>

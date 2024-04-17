@@ -19,24 +19,15 @@ export default function Rugrats() {
           submissions throughout the day.
         </p>
         <u className="pb-4">
-          We strongly encourage the community to refrain from purchasing coins associated
-          with blacklisted addresses.
+          We strongly encourage the community to JOIN our TG and HODL DAXWEEDER.
         </u>
-        <p className="pb-4">
-          It's essential to refer to wallet addresses accurately, as usernames or tickers
-          may align.
-        </p>
         <p className="pb-8">
-          We are actively enhancing our platform to mitigate rug pulls and enhance
-          security. This includes measures like blacklisting users known for utilizing
-          bots to artificially inflate coin value before executing rug pulls.
+          We are actively enhancing our platform to display our biggest holders.
         </p>
       </div>
 
       <div className="mx-16 mt-12 2xl:mx-64 mt-12 text-gray-50 tracking-wider text-lg flex flex-col bg-red-400 rounded-xl border border-yellow-800 border-double p-4 bg-opacity-10">
-        <label className="text-2xl font-bold">
-          Here you can search for blacklisted wallets:
-        </label>
+        <label className="text-2xl font-bold">Here you can search for wallets:</label>
         <input
           type="text"
           placeholder="Paste wallet address..."
@@ -58,9 +49,7 @@ export default function Rugrats() {
                 <tr>
                   <th className="py-4 px-6 bg-gray-900">Number</th>
                   <th className="py-4 px-6">Wallet Address</th>
-                  <th className="py-4 px-6 bg-gray-900">Username</th>
-                  <th className="py-4 px-6">Name of the Project</th>
-                  <th className="py-4 px-6 bg-gray-900">Ticker</th>
+                  <th className="py-4 px-6 bg-gray-900">Holder username</th>
                 </tr>
               </thead>
               <tbody>
@@ -69,8 +58,6 @@ export default function Rugrats() {
                     <td className="py-4 px-6">{index + 1}</td>
                     <td className="py-4 px-6">{row.walletAddress}</td>
                     <td className="py-4 px-6">{row.username}</td>
-                    <td className="py-4 px-6">{row.projectName}</td>
-                    <td className="py-4 px-6">{row.ticker}</td>
                   </tr>
                 ))}
               </tbody>
@@ -114,18 +101,6 @@ const data = [
     ticker: "SPEPE",
   },
   {
-    walletAddress: "5HUTkjTChJc6DyeSAcUgVuLncKSvHfMokgdn9tacbFfP",
-    username: "SHUTKj",
-    projectName: "Pepe Peepo",
-    ticker: "PEEPO",
-  },
-  {
-    walletAddress: "5HUTkjTChJc6DyeSAcUgVuLncKSvHfMokgdn9tacbFfP",
-    username: "SHUTKj",
-    projectName: "General Aladeen Pepe",
-    ticker: "ALPEPE",
-  },
-  {
     walletAddress: "6DdKqwXD939bAtu4XUxXdiRfhUmzLh6nwYE71944RUq3",
     username: "6DdKqw",
     projectName: "Tender",
@@ -142,42 +117,6 @@ const data = [
     username: "3TymUE",
     projectName: "BirdDog",
     ticker: "BDOG",
-  },
-  {
-    walletAddress: "GKiYQ4hURwAtRJtA1R8gKyXpcfQQpvUQD3WgQvy98VEZ",
-    username: "Praialves",
-    projectName: "Sofibracoins",
-    ticker: "PRFV",
-  },
-  {
-    walletAddress: "GKiYQ4hURwAtRJtA1R8gKyXpcfQQpvUQD3WgQvy98VEZ",
-    username: "Praialves",
-    projectName: "Solaxative",
-    ticker: "SOLAX",
-  },
-  {
-    walletAddress: "GKiYQ4hURwAtRJtA1R8gKyXpcfQQpvUQD3WgQvy98VEZ",
-    username: "Praialves",
-    projectName: "WORLD PEACE",
-    ticker: "W☮",
-  },
-  {
-    walletAddress: "GKiYQ4hURwAtRJtA1R8gKyXpcfQQpvUQD3WgQvy98VEZ",
-    username: "Praialves",
-    projectName: "Lambo Space Princess",
-    ticker: "LSP",
-  },
-  {
-    walletAddress: "GKiYQ4hURwAtRJtA1R8gKyXpcfQQpvUQD3WgQvy98VEZ",
-    username: "Praialves",
-    projectName: "Solmail",
-    ticker: "Mail",
-  },
-  {
-    walletAddress: "GKiYQ4hURwAtRJtA1R8gKyXpcfQQpvUQD3WgQvy98VEZ",
-    username: "Praialves",
-    projectName: "DUCKSCOINS",
-    ticker: "DUCK",
   },
   {
     walletAddress: "GKiYQ4hURwAtRJtA1R8gKyXpcfQQpvUQD3WgQvy98VEZ",
@@ -204,56 +143,8 @@ const data = [
     ticker: "DBVNC",
   },
   {
-    walletAddress: "HWU2NH5apfxUpw2Wy6mBoHm2uZ7HgHFAnu9MjHTovpVD",
-    username: "pump888",
-    projectName: "Milady Sword Cock",
-    ticker: "COCK",
-  },
-  {
-    walletAddress: "HWU2NH5apfxUpw2Wy6mBoHm2uZ7HgHFAnu9MjHTovpVD",
-    username: "pump888",
-    projectName: "American Based",
-    ticker: "BUSA",
-  },
-  {
-    walletAddress: "HWU2NH5apfxUpw2Wy6mBoHm2uZ7HgHFAnu9MjHTovpVD",
-    username: "pump888",
-    projectName: "pepe1/2",
-    ticker: "pepe1/2",
-  },
-  {
-    walletAddress: "HWU2NH5apfxUpw2Wy6mBoHm2uZ7HgHFAnu9MjHTovpVD",
-    username: "pump888",
-    projectName: "dognohat",
-    ticker: "Nhbg",
-  },
-  {
-    walletAddress: "HWU2NH5apfxUpw2Wy6mBoHm2uZ7HgHFAnu9MjHTovpVD",
-    username: "pump888",
-    projectName: "JOPANMIKADO",
-    ticker: "MIKADO",
-  },
-  {
-    walletAddress: "HWU2NH5apfxUpw2Wy6mBoHm2uZ7HgHFAnu9MjHTovpVD",
-    username: "pump888",
-    projectName: "Turkish Milady",
-    ticker: "TURKMIL",
-  },
-  {
-    walletAddress: "HWU2NH5apfxUpw2Wy6mBoHm2uZ7HgHFAnu9MjHTovpVD",
-    username: "pump888",
-    projectName: "type shit",
-    ticker: "WOLF",
-  },
-  {
-    walletAddress: "HWU2NH5apfxUpw2Wy6mBoHm2uZ7HgHFAnu9MjHTovpVD",
-    username: "pump888",
-    projectName: "Sad Nuggle",
-    ticker: "NUG",
-  },
-  {
-    walletAddress: "HWU2NH5apfxUpw2Wy6mBoHm2uZ7HgHFAnu9MjHTovpVD",
-    username: "pump888",
+    walletAddress: "HWU2NH5apfxUpw2Wb4tBoHm2uZ7HgHFAnu9MjHTovpVD",
+    username: "jerri48",
     projectName: "Islamic Republic of Irug",
     ticker: "IRUG",
   },
@@ -280,42 +171,6 @@ const data = [
     username: "PaintToys",
     projectName: "Paint Toys",
     ticker: "TOYS",
-  },
-  {
-    walletAddress: "Af7Sk11MuQEz1V85Ug9KKiJoijY6DsW5g5eCAriqqavs",
-    username: "PaintToys",
-    projectName: "VINE",
-    ticker: "VINE",
-  },
-  {
-    walletAddress: "Af7Sk11MuQEz1V85Ug9KKiJoijY6DsW5g5eCAriqqavs",
-    username: "PaintToys",
-    projectName: `The Weeknd's "Trilogy"`,
-    ticker: "Trilogy",
-  },
-  {
-    walletAddress: "Af7Sk11MuQEz1V85Ug9KKiJoijY6DsW5g5eCAriqqavs",
-    username: "PaintToys",
-    projectName: "Monke On De Call",
-    ticker: "Monke",
-  },
-  {
-    walletAddress: "Af7Sk11MuQEz1V85Ug9KKiJoijY6DsW5g5eCAriqqavs",
-    username: "PaintToys",
-    projectName: "i found the dev",
-    ticker: "ItsHim",
-  },
-  {
-    walletAddress: "Af7Sk11MuQEz1V85Ug9KKiJoijY6DsW5g5eCAriqqavs",
-    username: "PaintToys",
-    projectName: "CCing",
-    ticker: "CC",
-  },
-  {
-    walletAddress: "Af7Sk11MuQEz1V85Ug9KKiJoijY6DsW5g5eCAriqqavs",
-    username: "PaintToys",
-    projectName: "SHAKEOUT",
-    ticker: "ANSEM",
   },
   {
     walletAddress: "D9eeM5BBAEXyMfjhbSYzNnJg3TkD7EtpSr66ubgDkCUh",

@@ -8,13 +8,13 @@ export default function Home() {
   }
 
   const images = [
-    "https://i.ibb.co/ZKzWcwG/Harold-1.png",
-    "https://i.ibb.co/qrv2FJF/Harold-2.png",
-    "https://i.ibb.co/stJsHMP/Harold-3.png",
-    "https://i.ibb.co/yVQdPVt/Harold-4.png",
-    "https://i.ibb.co/k14tb4p/Harold-5.png",
-    "https://i.ibb.co/x3k7c6y/Harold-6.png",
-    "https://i.ibb.co/7W9pq20/Harold-7.png",
+    "https://i.ibb.co/d60X0Mj/8n5a1j.jpg",
+    "https://i.ibb.co/sCbBVWb/8n59yj.jpg",
+    "https://i.ibb.co/NsLGKzL/let-lt-s-1.jpg",
+    "https://i.ibb.co/8rb9myg/let-lt-s.jpg",
+    "https://i.ibb.co/4MbX0c8/8n59am.jpg",
+    "https://i.ibb.co/nchVYcv/8n5950.jpg",
+    "https://i.ibb.co/54dNySM/8n592m.jpg",
   ];
 
   const getHimMad = () => {
@@ -42,7 +42,7 @@ export default function Home() {
       <div className="flex items-start my-28">
         <div className="mx-64 text-gray-50 tracking-widest text-lg ">
           <h1 className="my-16 font-bold text-2xl">
-            Welcome to the pump.pain community!
+            Welcome to the DAXWEEDER community!
           </h1>
           <p>
             A community where we understand the agony and frustration that comes with
@@ -52,9 +52,9 @@ export default function Home() {
           </p>
           <p>But here, you are NOT ALONE.</p>
           <br />
-          <p className="mb-4 text-2xl">The solution is us. The solution is $PUPA.</p>
+          <p className="mb-4 text-2xl">The solution is us. The solution is $DAXWEEDER.</p>
           <button
-            className="mt-8 bg-gradient-to-t from-red-400 to-gray border border-solid border-yellow-800 border-2 hover:from-red-500 hover:to-red 
+            className="mt-8 bg-gradient-to-t from-blue-700 to-gray border border-solid border-yellow-800 border-2 hover:from-red-500 hover:to-red 
       text-white font-bold p-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out text-4xl"
             onClick={telegramRedirect}
           >
@@ -76,14 +76,14 @@ export default function Home() {
        text-white font-bold p-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out"
               onClick={getHimMad}
             >
-              Make him mad
+              ➡
             </button>
             <button
               onClick={getHimChill}
               className="text-2xl mt-8 bg-gradient-to-t from-red-200 to-gray border border-solid border-yellow-800 border-2 hover:from-red-100 hover:to-red
        text-white font-bold p-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out"
             >
-              Make him chill
+              ⬅
             </button>
           </div>
         </div>

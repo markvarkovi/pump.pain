@@ -10,7 +10,7 @@ export default function Navbar() {
         <div className="flex items-center space-x-10 2xl:space-x-40 tracking-widest text-sm 2xl:text-2xl cursor-pointer">
           <div id="pictures" className="flex mt-8">
             <img
-              src="https://i.ibb.co/Pm1CMc9/logo.jpg"
+              src="https://i.ibb.co/9HH8g8X/photo-2024-04-18-01-27-03.jpg"
               className="w-40 h-40 rounded-full border border-4 border-gray-50"
               alt="logo"
               onClick={() => window.location.reload()}
@@ -23,13 +23,13 @@ export default function Navbar() {
             <Link to="/about">ABOUT</Link>
           </div>
           <div>
-            <Link to="/ruglist">LIST OF RUGRATS</Link>
+            <Link to="/ruglist">LIST OF WEEDERS</Link>
           </div>
           <div>
             <Link to="/social">SOCIALS</Link>
           </div>
           <div>
-            <Link to="/report">REPORT RUGPULL</Link>
+            <Link to="/report">JOIN WEEDERS</Link>
           </div>
         </div>
       </header>
