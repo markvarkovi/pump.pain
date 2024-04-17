@@ -314,4 +314,10 @@ const data = [
     projectName: "SHAKEOUT",
     ticker: "ANSEM",
   },
+  {
+    walletAddress: "D9eeM5BBAEXyMfjhbSYzNnJg3TkD7EtpSr66ubgDkCUh",
+    username: "D9eem5",
+    projectName: "cettromp",
+    ticker: "cettromp",
+  },
 ];
