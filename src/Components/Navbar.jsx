@@ -29,7 +29,7 @@ export default function Navbar() {
             <Link to="/social">SOCIALS</Link>
           </div>
           <div>
-            <Link to="/report">JOIN WEEDERS</Link>
+            <Link to="/join">JOIN WEEDERS</Link>
           </div>
         </div>
       </header>
