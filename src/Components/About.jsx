@@ -15,16 +15,14 @@ export default function About() {
           <br />
           <em>
             <strong>
-              <u>
-                We are also on a mission to hold accountable those responsible for
-                rug-pulls.
-              </u>
+              <u>We are also on a mission to stop the trend of rugpulls.</u>
             </strong>
           </em>
           <br />
           <br />
-          Our community serves as a gathering place for investors to share information and
-          gather evidence against the owners who rug-pulled their coins.
+          Our community serves as a gathering place for investors to share information
+          about the mechanics of rugpulling, invent solutions, and track the wallet of
+          rugpullers.
           <br />
           <br />
           Together, we are building a database to shine a light on these fraudulent
