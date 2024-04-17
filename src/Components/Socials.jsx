@@ -86,7 +86,7 @@ export default function Socials() {
                 text-white font-bold p-4 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out text-3xl"
               onClick={() => redirectTo(pump)}
             >
-              Soon
+              BUY NOW
             </button>
           </div>
         </div>
