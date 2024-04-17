@@ -18,10 +18,13 @@ export default function Rugrats() {
           Our database receives frequent updates from both our team and community
           submissions throughout the day.
         </p>
-        <p className="pb-4">
+        <u className="pb-4">
           We strongly encourage the community to refrain from purchasing coins associated
-          with blacklisted addresses. It's essential to refer to wallet addresses
-          accurately, as usernames or tickers may align.
+          with blacklisted addresses.
+        </u>
+        <p className="pb-4">
+          It's essential to refer to wallet addresses accurately, as usernames or tickers
+          may align.
         </p>
         <p className="pb-8">
           We are actively enhancing our platform to mitigate rug pulls and enhance
