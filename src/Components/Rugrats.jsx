@@ -57,7 +57,7 @@ export default function Rugrats() {
                   <th className="py-4 px-6">Wallet Address</th>
                   <th className="py-4 px-6 bg-gray-900">Username</th>
                   <th className="py-4 px-6">Name of the Project</th>
-                  <th className="py-4 px-6">Ticker</th>
+                  <th className="py-4 px-6 bg-gray-900">Ticker</th>
                 </tr>
               </thead>
               <tbody>
