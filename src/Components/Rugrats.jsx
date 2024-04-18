@@ -19,7 +19,7 @@ export default function Rugrats() {
           submissions throughout the day.
         </p>
         <u className="pb-4">
-          We strongly encourage the community to JOIN our TG and HODL DAXWEEDER.
+          We strongly encourage the community to JOIN our TG and HODL BODANCE.
         </u>
         <p className="pb-8">
           We are actively enhancing our platform to display our biggest holders.

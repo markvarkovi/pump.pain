@@ -78,7 +78,7 @@ export default function Socials() {
               className="w-40 h-40 mb-8"
             />
             <p className="text-gray-800 text-center mb-8 text-xl">
-              Buy now and fight back against Rugrats!
+              Buy now, HODL and strengthen the community!
             </p>
             <button
               className="bg-gradient-to-t from-red-400 to-gray border border-solid border-yellow-800 border-2 hover:from-red-500 hover:to-red 
