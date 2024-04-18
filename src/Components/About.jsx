@@ -6,7 +6,7 @@ export default function About() {
         <br />
         <br />
         <p className="text-2xl mx-26">
-          At DAXWEEDER, we provide a space for investors to express their anger,
+          At KOYN CRAKKERS, we provide a space for investors to express their anger,
           disappointment, and pain openly and without judgment. Whether you are a seasoned
           trader or a newcomer to the world of crypto, we are here to lend an ear and
           offer support during these difficult times. But we are not just a sounding board
@@ -22,8 +22,8 @@ export default function About() {
           <br />
           Together, we are building a community which is able to shield against rugging
           and swinging. If you have been rug-pulled and need a shoulder to lean on, or if
-          you want to join the fight against rug-pullers, DAXWEEDER is here for you. Just
-          roll a joint and join the DAXWEEDERS!
+          you want to join the fight against rug-pullers, KOYN CRAKKO is here for you.
+          Just roll a joint and join the KOYN CRAKKERS!
           <br />
           <br />
           <strong className="text-red-300 text-4xl tracking-widest">
