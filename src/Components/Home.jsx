@@ -42,7 +42,7 @@ export default function Home() {
       <div className="flex items-start my-28">
         <div className="mx-64 text-gray-50 tracking-widest text-lg ">
           <h1 className="my-16 font-bold text-2xl">
-            Welcome to the BODANCERS community!
+            Welcome to the BODENCERS community!
           </h1>
           <p>
             A community where we understand the agony and frustration that comes with
@@ -52,7 +52,7 @@ export default function Home() {
           </p>
           <p>But here, you are NOT ALONE.</p>
           <br />
-          <p className="mb-4 text-2xl">The solution is us. The solution is $BODANCE.</p>
+          <p className="mb-4 text-2xl">The solution is us. The solution is $BODENCE.</p>
           <button
             className="mt-8 bg-gradient-to-t from-blue-700 to-gray border border-solid border-yellow-800 border-2 hover:from-red-500 hover:to-red 
       text-white font-bold p-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out text-4xl"

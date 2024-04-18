@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <>
       <div className="bg-yellow-300 bg-opacity-90 text-black text-3xl bold flex justify-center font-bold tracking-widest overflow-hidden py-4">
-        <p>🚀 LISTING $BODANCE IS LIVE ON PUMP.FUN 🚀 &nbsp;</p>
+        <p>🚀 LISTING $BODENCE IS LIVE ON PUMP.FUN 🚀 &nbsp;</p>
       </div>
       <header className="text-gray-50 mb-0 px-4 w-full flex items-center justify-center">
         <div className="flex items-center space-x-10 2xl:space-x-40 tracking-widest text-sm 2xl:text-2xl cursor-pointer">
@@ -23,13 +23,13 @@ export default function Navbar() {
             <Link to="/about">ABOUT</Link>
           </div>
           <div>
-            <Link to="/ruglist">LIST OF BODANCERS</Link>
+            <Link to="/ruglist">LIST OF BODENCERS</Link>
           </div>
           <div>
             <Link to="/social">SOCIALS</Link>
           </div>
           <div>
-            <Link to="/join">JOIN BODANCE</Link>
+            <Link to="/join">JOIN BODENCE</Link>
           </div>
         </div>
       </header>
