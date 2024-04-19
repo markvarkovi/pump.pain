@@ -6,7 +6,7 @@ export default function About() {
         <br />
         <br />
         <p className="text-2xl mx-26">
-          At Pump.Pain, we provide a space for investors to express their anger,
+          At Pain.Pump, we provide a space for investors to express their anger,
           disappointment, and pain openly and without judgment. Whether you are a seasoned
           trader or a newcomer to the world of crypto, we are here to lend an ear and
           offer support during these difficult times. But we are not just a sounding board
