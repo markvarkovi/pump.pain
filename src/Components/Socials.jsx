@@ -1,7 +1,7 @@
 export default function Socials() {
-  const tg = "https://t.me/+QiRqhErmM0A2MjM0";
+  const tg = "https://t.me/+tjzoRJK5fRI0ZDlk";
   const x = "https://twitter.com/PumpPain53294";
-  const pump = "https://pump.fun/CsETM4yQUjV76egCaSZBn6yxp9W8BtLh6Adrp9hYKAfk";
+  const pump = "";
   const tiktok = "https://www.tiktok.com/@pump.pain";
 
   function redirectTo(link) {
