@@ -4,7 +4,7 @@ export default function Home() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   function telegramRedirect() {
-    window.location.href = "https://t.me/+jWZrw_eUN29hN2Vk";
+    window.location.href = "https://t.me/+tjzoRJK5fRI0ZDlk";
   }
 
   const images = [
