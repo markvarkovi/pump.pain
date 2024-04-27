@@ -52,7 +52,7 @@ export default function Home() {
           </p>
           <p>But here, you are NOT ALONE.</p>
           <br />
-          <p className="mb-4 text-2xl">The solution is us. The solution is $PAPU.</p>
+          <p className="mb-4 text-2xl">The solution is us. The solution is $PP.</p>
           <button
             className="mt-8 bg-gradient-to-t from-red-400 to-gray border border-solid border-yellow-800 border-2 hover:from-red-500 hover:to-red 
       text-white font-bold p-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out text-4xl"
